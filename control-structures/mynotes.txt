@@ -1,0 +1,37 @@
+# Range-based for Loop
+
+introduced in C++11
+
+syntax:
+
+for (var_type var_name: sequence)
+	statement; //can use var_name
+
+for (var_type var_name: sequence) {
+	statements; // can use var_name
+}
+
+example1:
+
+int scores [] {100,90,97};
+
+for (int score : scores)
+	cout << score << endl;
+
+output:
+
+100
+90
+97
+
+example2:
+
+int scores [] {100,90,97};
+for (auto score : scores)	//let the compiler deduce the type using auto
+	cout << score << endl;
+
+output:
+
+100
+90
+97

@@ -17,6 +17,8 @@ int main() {
 		case right:
 			cout << "Turn right" << endl;
 			break;
+		default:
+			cout << "OK" << endl;
 	}
 	cout << endl;
 	return 0;
