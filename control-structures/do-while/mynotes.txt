@@ -1,0 +1,36 @@
+1. Syntax
+
+do {
+    statements;
+}while (expression);
+
+Note: the semi colon at the end is a MUST
+
+The condition is checked at the end of each iteration, it is a post test loop.
+The execution is executed at least once.
+
+2. Example.
+input validation
+
+int number {};
+do {
+    cout << "Enter an integer between 1 and 5: ";
+    cin >> number;
+} while (number <= 1 || number >= 5);
+cout << "Thanks" << endl;
+
+area calculation with calculate another
+
+char selection {};
+do {
+    double width {}, height {};
+    cout << "Enter width and height separated by a space : ";
+    cin >> width >> height;
+
+    double area {width * height};
+    cout << "The area is " << area << endl;
+
+    cout << "Calculate another? (Y/N) : ";
+    cin >> selection;
+} while (selection == 'Y' || selection == 'y');
+cout << "Thanks!"<< endl;
